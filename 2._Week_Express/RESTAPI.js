@@ -4,8 +4,8 @@ const api = express();
 api.use(express.json());
 
 
-
-/*api.get("/", (req, res) => {
+//Exercise in class
+api.get("/", (req, res) => {
     res.send({message : "Thunder"});
 });
 
@@ -15,8 +15,10 @@ api.get("/welcome", (req, res) => {
 
 api.post("/mirror", (req, res) => {
     res.send(req.body);
-});*/
+});
 
+
+//Homework
 const beerArray = []
 
 api.get('/beers', (req, res) => {

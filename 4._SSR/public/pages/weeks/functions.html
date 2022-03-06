@@ -1,0 +1,91 @@
+
+<h3 class="pageTitle"> Welcome to the Function Description </h3>
+
+<br>
+
+<div class="container">
+    <div class="row">
+       <div class="col-md-3">
+            <h4>Hoisting</h4>
+            <p>
+                The variable goes before the method, 
+                calling  the add function.
+                <br>
+                <br>
+                console.log(add(2, 8));
+                <br>
+                <br>
+                function add(x, y) {
+                <br>
+                <br>
+                    return x +y;
+                <br>
+                <br>
+                }
+            </p>
+            <br>
+                <br>
+
+            <h4>Anonymous</h4>
+            <p>
+                A function without a name, where the argument can be used in conjunction with other functions, 
+                or as an immediately execution.  
+                <br>
+                <br>
+                const addInAVariable = function (x, y) {                
+                <br>
+                <br>
+                return x + y;                
+                <br>
+                <br>
+                }
+                <br>
+                <br>
+                console.log(addInAVariable(2, 5));
+            </p>
+            <br>
+                <br>
+    
+            <h4>Lambda</h4>
+            <p>
+                A function where the {} operator is being replace by the arrow => which creates shorter syntax.   
+                <br>
+                <br>
+                const addArrowFunction =  (x, y) => (35 ,2);               
+                <br>
+                <br>
+                console.log(addArrowFunction());
+            </p>
+            <br>
+                <br>
+
+            <h4>Callback</h4>
+            <p>
+                A callback function is a function passed into another function as an argument, 
+                which is then invoked inside the outer function to complete some kind of routine or action.
+                <br>
+                <br>
+                function doActionWithSomeone(anyFunctionReference, name) {               
+                <br>
+                <br>
+                anyFunctionReference(name);
+                <br>
+                <br>
+                }
+                <br>
+                <br>
+                const running = (name) => console.log(`${name} is running`);
+                <br>
+                <br>
+                doActionWithSomeone(running, "Kev");
+                <br>
+                <br>
+            </p>
+            <br>
+                <br>
+
+            
+        
+       </div>
+    </div>
+ </div>

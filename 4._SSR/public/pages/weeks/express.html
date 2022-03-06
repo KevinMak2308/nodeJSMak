@@ -1,0 +1,94 @@
+
+<h3 class="pageTitle"> Welcome to the Express Description </h3> 
+
+<br>
+
+<div class="col-md-3">
+<p> 
+    Express.js is a Node js web application server framework, which is specifically designed for building single-page, multi-page, and hybrid web applications.
+
+    It has become the standard server framework for node.js. Express is the backend part of something known as the MEAN stack.
+    
+    The MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications which has the following components;
+    
+<ul>
+    <li>1) MongoDB - The standard NoSQL database</li>
+    
+    <li>2) Express.js - The default web applications framework</li>
+    
+    <li>3) Angular.js - The JavaScript MVC framework used for web applications</li>
+    
+    <li>4) Node.js - Framework used for scalable server-side and networking applications.</li>
+</ul>
+    
+    The Express.js framework makes it very easy to develop an application which can be used to handle multiple types of requests like the GET, PUT, and POST and DELETE requests. 
+</p>
+</div>
+
+<div class="col-md-3">
+    <h4> Installation </h4>
+    <p>
+        Express gets installed via the Node Package Manager. This can be done by executing the following line in the command line
+        <br>
+        <br>
+        <b>npm install express</b>
+        <br>
+        <br>
+        The above command requests the Node package manager to download the required express modules and install them accordingly.
+    </p>
+</div>
+
+<div class="col-md-3">
+    <h4> Setup </h4>
+    <p>
+        We'll start of by creating our dependencies. These can be manually created through the package.json file, where you can adjust each specifications accordingly.<br> 
+        However we can also simply just do an npm install express, that gives the necessary dependencies automatically, like stated above. <br>
+        This will allow to create, request, and recieve json objects. It will allow to construct an express server.
+
+
+        <ul>
+            <li>const express = require("express");</li>
+            <li>const fs = require("fs");</li>
+            <li>const app = express();</li>
+            <li>app.use(express.static("public"));</li>
+            <li>app.listen(8080, () => {
+                <br>
+                <br>
+                console.log("The server is running on port", 8080);
+                <br>
+                <br>
+            });
+        </li>
+    </ul>
+        <br>
+
+        This is a basic setup to create a minimalistic server using node.js and express.js. Created a variable <b>app</b> that uses the import <b>require</b> to access express. <br>
+        Along with express we also <b>require</b> filesync, which we use in conjunction with reading files, such as either properties, strings, or paths.<br> 
+        We then use <b>express.static</b> to gain access to css. <br>
+        We have then proceeded to assign our server to the port <b>8080</b>, which is our local server. <br>
+        
+    </p>
+</div>
+
+<div class="col-md-3">
+    <h4> RESTAPI </h4>
+    <p>
+        An example of how to make a request to the server, and recieve a json object using a HTTP Method Get and the endpoint '/beers'. 
+        <br>
+        <br>
+        api.get('/beers', (req, res) => {
+            <br>
+            <br>
+            res.json(beerArray);
+            <br>
+            <br>
+        });
+    </p>
+</div>
+
+<div>
+    <h4> Webpage Structure </h4>
+    <p>
+        To unburden the client side loadtime we instead split up our html in several pages. 
+    </p>
+</div>

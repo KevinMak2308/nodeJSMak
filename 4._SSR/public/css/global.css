@@ -1,0 +1,17 @@
+.pageTitle {
+    text-align: center;
+}
+
+.col-md-3 {
+    margin-block-end: 10px;
+}
+
+.list-unstyled.love li, 
+.list-unstyled.no-love li {
+  background: url('http://d26mw3lpqa99qj.cloudfront.net/prod-fool/sell/yes-15d4ba569f9f4beb7d8cfd8adc8ed886.png') no-repeat;
+  padding:0 0 5% 45px;
+}
+
+.list-unstyled.no-love li {
+  background: url('http://d26mw3lpqa99qj.cloudfront.net/prod-fool/sell/yes-15d4ba569f9f4beb7d8cfd8adc8ed886.png') no-repeat;
+}

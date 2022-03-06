@@ -16,11 +16,11 @@ console.log(addInAVariable(2, 5));
 
 //Lamda function, rather than {} you can have the return value after => x + y;
 
-const addArrowFunction = (x ,y) => {
-    return x + y;
+const addArrowFunction = (x ,y) => 35 + 2; {
+    //return x + y;
 }
 
-console.log(addArrowFunction(35 ,2));
+console.log(addArrowFunction());
 
 //Callback Function. doActionWithSomeone takes two parameters, 
 //and you add two values to the parameters, which you then call.
